@@ -1,1 +1,1 @@
-# wd401
+## Course Repository for WD301, by pupilfirst.school
