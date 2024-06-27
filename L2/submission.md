@@ -21,7 +21,6 @@ The application Pairdraw is a doodle sharing application. In the application the
 To better handle modules, assets, `css` and `js` modules in the project. we define a webpack config in the `webpack.config.js` file
 
 ```js
-// webpack.config.js
 import path from 'path';
 import { fileURLToPath } from 'url';
 
@@ -71,17 +70,12 @@ This enables us to better handle `css`, `jsx`, `tsx` in our project.
 To ensure the webpack is compiled into the `dist` folder properly we make the following declarations in our application
 
 ```json
-// package.json
 
-...
 "scripts": {
-	...,
-	"wp-start": "webpack serve --open",
-    "wp-build": "npx webpack build",
-    ...,
+    "wp-start": "webpack serve --open",
+    "wp-build": "npx webpack build",
 }
 
-...
 ```
 
 By running `wp-build` the webpack bundle gets compiled into the `dist` folder
@@ -151,7 +145,6 @@ Import maps are a configuration file that specifies how JavaScript modules are r
 To achieve this we create a file called `importmap.json`, an example import map will look as follows
 
 ```json
-// importmap.json
 {
   "imports": {
     "@/components/CanvasComponent": "/src/components/CanvasComponent.tsx",
